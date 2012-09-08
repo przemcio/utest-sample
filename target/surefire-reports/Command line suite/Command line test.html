@@ -1,0 +1,1781 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>100/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 02 21:01:33 CEST 2012</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (920 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.allSubscribedClientsShouldReceiveMessages()'><b>allSubscribedClientsShouldReceiveMessages</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.anyUserShouldNotRecievedMessage()'><b>anyUserShouldNotRecievedMessage</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.doubleBooking()'><b>doubleBooking</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:00, 12:00, 11:00, 12:00</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:16)
+	at pl.testng.ch4.ClassBookingSystemTest.doubleBooking(ClassBookingSystemTest.java:70)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2070846325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2070846325'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:16)
+	at pl.testng.ch4.ClassBookingSystemTest.doubleBooking(ClassBookingSystemTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.doubleBooking()'><b>doubleBooking</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:00, 12:00, 10:00, 13:00</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:16)
+	at pl.testng.ch4.ClassBookingSystemTest.doubleBooking(ClassBookingSystemTest.java:70)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace375604310", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace375604310'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:16)
+	at pl.testng.ch4.ClassBookingSystemTest.doubleBooking(ClassBookingSystemTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.doubleBooking()'><b>doubleBooking</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:00, 12:00, 11:00, 13:00</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:16)
+	at pl.testng.ch4.ClassBookingSystemTest.doubleBooking(ClassBookingSystemTest.java:70)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace331657670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace331657670'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:16)
+	at pl.testng.ch4.ClassBookingSystemTest.doubleBooking(ClassBookingSystemTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.doubleBooking()'><b>doubleBooking</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:00, 12:00, 10:00, 12:00</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:16)
+	at pl.testng.ch4.ClassBookingSystemTest.doubleBooking(ClassBookingSystemTest.java:70)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace714072978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace714072978'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:16)
+	at pl.testng.ch4.ClassBookingSystemTest.doubleBooking(ClassBookingSystemTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.invalidInitialization()'><b>invalidInitialization</b><br>Test class: pl.testng.ch4.PasswordUtilTest</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at pl.testng.ch4.PasswordChecker.&lt;init&gt;(PasswordChecker.java:17)
+	at pl.testng.ch4.PasswordUtilTest.invalidInitialization(PasswordUtilTest.java:32)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1872951877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1872951877'><pre>java.lang.IllegalArgumentException
+	at pl.testng.ch4.PasswordChecker.&lt;init&gt;(PasswordChecker.java:17)
+	at pl.testng.ch4.PasswordUtilTest.invalidInitialization(PasswordUtilTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.invalidInitialization2()'><b>invalidInitialization2</b><br>Test class: pl.testng.ch4.PasswordUtilTest</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at pl.testng.ch4.PasswordChecker.&lt;init&gt;(PasswordChecker.java:17)
+	at pl.testng.ch4.PasswordUtilTest.invalidInitialization2(PasswordUtilTest.java:37)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace886899013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace886899013'><pre>java.lang.IllegalArgumentException
+	at pl.testng.ch4.PasswordChecker.&lt;init&gt;(PasswordChecker.java:17)
+	at pl.testng.ch4.PasswordUtilTest.invalidInitialization2(PasswordUtilTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.invalidInitialization3()'><b>invalidInitialization3</b><br>Test class: pl.testng.ch4.PasswordUtilTest</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at pl.testng.ch4.PasswordChecker.&lt;init&gt;(PasswordChecker.java:17)
+	at pl.testng.ch4.PasswordUtilTest.invalidInitialization3(PasswordUtilTest.java:42)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace427717664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace427717664'><pre>java.lang.IllegalArgumentException
+	at pl.testng.ch4.PasswordChecker.&lt;init&gt;(PasswordChecker.java:17)
+	at pl.testng.ch4.PasswordUtilTest.invalidInitialization3(PasswordUtilTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.newReservationShouldBeLogged()'><b>newReservationShouldBeLogged</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.notSubscribedClientShouldNotReceiveMessage()'><b>notSubscribedClientShouldNotReceiveMessage</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.oneSubscribedShouldBeAbledToSubscibeToManyCategory()'><b>oneSubscribedShouldBeAbledToSubscibeToManyCategory</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.removedNotSubscribedClient()'><b>removedNotSubscribedClient</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td><div><pre>pl.testng.ch5.UnknowClientException
+	at pl.testng.ch5.RaceResultsService.removeSubsciber(RaceResultsService.java:40)
+	at pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.removedNotSubscribedClient(RaceResultsServiceFirstAndSecondRefactoredTest.java:126)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1454641192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1454641192'><pre>pl.testng.ch5.UnknowClientException
+	at pl.testng.ch5.RaceResultsService.removeSubsciber(RaceResultsService.java:40)
+	at pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.removedNotSubscribedClient(RaceResultsServiceFirstAndSecondRefactoredTest.java:126)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shooulReturnsAllReservations()'><b>shooulReturnsAllReservations</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch6.HelpDeskTest.shoudHandleIssue()'><b>shoudHandleIssue</b><br>Test class: pl.testng.ch6.HelpDeskTest<br>Parameters: 5, 15, true</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.HelpDeskTest@2e63764d</td></tr>
+<tr>
+<td title='pl.testng.ch6.HelpDeskTest.shoudHandleIssue()'><b>shoudHandleIssue</b><br>Test class: pl.testng.ch6.HelpDeskTest<br>Parameters: 5, 18, true</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.HelpDeskTest@2e63764d</td></tr>
+<tr>
+<td title='pl.testng.ch6.HelpDeskTest.shoudHandleIssue()'><b>shoudHandleIssue</b><br>Test class: pl.testng.ch6.HelpDeskTest<br>Parameters: 6, 15, true</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.HelpDeskTest@2e63764d</td></tr>
+<tr>
+<td title='pl.testng.ch6.HelpDeskTest.shoudHandleIssue()'><b>shoudHandleIssue</b><br>Test class: pl.testng.ch6.HelpDeskTest<br>Parameters: 6, 18, false</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.HelpDeskTest@2e63764d</td></tr>
+<tr>
+<td title='pl.testng.ch6.HelpDeskTest.shoudHandleIssue()'><b>shoudHandleIssue</b><br>Test class: pl.testng.ch6.HelpDeskTest<br>Parameters: 7, 18, false</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.HelpDeskTest@2e63764d</td></tr>
+<tr>
+<td title='pl.testng.ch6.HelpDeskTest.shoudHandleIssue()'><b>shoudHandleIssue</b><br>Test class: pl.testng.ch6.HelpDeskTest<br>Parameters: 7, 6, false</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.HelpDeskTest@2e63764d</td></tr>
+<tr>
+<td title='pl.testng.ch6.HelpDeskTest.shoudHandleIssue()'><b>shoudHandleIssue</b><br>Test class: pl.testng.ch6.HelpDeskTest<br>Parameters: 1, 12, false</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.HelpDeskTest@2e63764d</td></tr>
+<tr>
+<td title='pl.testng.ch6.HelpDeskTest.shoudHandleIssue()'><b>shoudHandleIssue</b><br>Test class: pl.testng.ch6.HelpDeskTest<br>Parameters: 1, 18, false</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.HelpDeskTest@2e63764d</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.shoudlRecivedMessageFromSubscribedCategory()'><b>shoudlRecivedMessageFromSubscribedCategory</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shoudlReservedClassRoomWithEquipment()'><b>shoudlReservedClassRoomWithEquipment</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch3.HashMapTest.shouldAddElement()'><b>shouldAddElement</b><br>Test class: pl.testng.ch3.HashMapTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.HashMapTest@7194b34a</td></tr>
+<tr>
+<td title='pl.testng.ch3.HashMapTest.shouldAddWithNullKey()'><b>shouldAddWithNullKey</b><br>Test class: pl.testng.ch3.HashMapTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.HashMapTest@7194b34a</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldAllowToBookClassRoom()'><b>shouldAllowToBookClassRoom</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 11:00, 12:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldAllowToBookClassRoom()'><b>shouldAllowToBookClassRoom</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 09:00, 12:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldAllowToBookClassRoom()'><b>shouldAllowToBookClassRoom</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 11:00, 14:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.UserServiceTest.shouldAssignDOC()'><b>shouldAssignDOC</b><br>Test class: pl.testng.ch5.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.UserServiceTest@b3c03bb</td></tr>
+<tr>
+<td title='pl.testng.ch3.HashMapTest.shouldClean()'><b>shouldClean</b><br>Test class: pl.testng.ch3.HashMapTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.HashMapTest@7194b34a</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.shouldFinishedWitoutAnyException()'><b>shouldFinishedWitoutAnyException</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNOTReturnAvailableClassRooms()'><b>shouldNOTReturnAvailableClassRooms</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 11:00, 12:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNOTReturnAvailableClassRooms()'><b>shouldNOTReturnAvailableClassRooms</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 09:00, 12:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNOTReturnAvailableClassRooms()'><b>shouldNOTReturnAvailableClassRooms</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 11:00, 14:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNotAllowToAddTwoTheSameClassRooms()'><b>shouldNotAllowToAddTwoTheSameClassRooms</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation()'><b>shouldNotAllowedToAddWrongReservation</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 11:00, 12:00</td>
+<td><div><pre>pl.testng.ch5.AlreadyReservedException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:39)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation(BookingSystem2Test.java:122)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace682774205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace682774205'><pre>pl.testng.ch5.AlreadyReservedException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:39)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation(BookingSystem2Test.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation()'><b>shouldNotAllowedToAddWrongReservation</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 09:00, 12:00</td>
+<td><div><pre>pl.testng.ch5.AlreadyReservedException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:39)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation(BookingSystem2Test.java:122)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace333896484", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace333896484'><pre>pl.testng.ch5.AlreadyReservedException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:39)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation(BookingSystem2Test.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation()'><b>shouldNotAllowedToAddWrongReservation</b><br>Test class: pl.testng.ch5.BookingSystem2Test<br>Parameters: 11:00, 14:00</td>
+<td><div><pre>pl.testng.ch5.AlreadyReservedException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:39)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation(BookingSystem2Test.java:122)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace800171212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace800171212'><pre>pl.testng.ch5.AlreadyReservedException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:39)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotAllowedToAddWrongReservation(BookingSystem2Test.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNotMadeAreservationDueToCleaningHours()'><b>shouldNotMadeAreservationDueToCleaningHours</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td><div><pre>pl.testng.ch5.MissingClassRoomException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:77)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotMadeAreservationDueToCleaningHours(BookingSystem2Test.java:145)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace778068891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778068891'><pre>pl.testng.ch5.MissingClassRoomException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:77)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotMadeAreservationDueToCleaningHours(BookingSystem2Test.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldNotMadeAreservationDueToCleaningHours2()'><b>shouldNotMadeAreservationDueToCleaningHours2</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td><div><pre>pl.testng.ch5.AlreadyReservedException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:39)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotMadeAreservationDueToCleaningHours2(BookingSystem2Test.java:154)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2029686239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2029686239'><pre>pl.testng.ch5.AlreadyReservedException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:39)
+	at pl.testng.ch5.BookingSystem2Test.shouldNotMadeAreservationDueToCleaningHours2(BookingSystem2Test.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.shouldRecivedOnlySubscribedCategoriesMessages()'><b>shouldRecivedOnlySubscribedCategoriesMessages</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch3.HashMapTest.shouldReplace()'><b>shouldReplace</b><br>Test class: pl.testng.ch3.HashMapTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.HashMapTest@7194b34a</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldReturnAllExistingClassRooms()'><b>shouldReturnAllExistingClassRooms</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldReturnAvailableClassRooms()'><b>shouldReturnAvailableClassRooms</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 5, 1, T_#1</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 3, 1, 0000</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 3, 3, 23To_#</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 3, 2, _23########</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 5, 2, _23__2____</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 5, 2, _______</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 5, 2, samohaslo</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 5, 2, duzehaslo</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnFalse()'><b>shouldReturnFalse</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 5, 2, null</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch6.UserListTest.shouldReturnOneUser()'><b>shouldReturnOneUser</b><br>Test class: pl.testng.ch6.UserListTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.UserListTest@2b8aef48</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.shouldReturnReservation()'><b>shouldReturnReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.shouldReturnReservations()'><b>shouldReturnReservations</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:00, 12:00, 12:00, 14:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.shouldReturnReservations()'><b>shouldReturnReservations</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 12:00, 14:00, 11:00, 12:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.shouldReturnReservations()'><b>shouldReturnReservations</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 09:00, 12:00, 12:00, 13:00</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch6.UserListTest.shouldReturnTwoUser()'><b>shouldReturnTwoUser</b><br>Test class: pl.testng.ch6.UserListTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.UserListTest@2b8aef48</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnValid()'><b>shouldReturnValid</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 5, 1, Tojesthaslo_#1</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnValid()'><b>shouldReturnValid</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 3, 1, To_#1</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnValid()'><b>shouldReturnValid</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 3, 3, 23To_#1</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnValid()'><b>shouldReturnValid</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 3, 2, _23#######To#</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.PasswordUtilTest.shouldReturnValid()'><b>shouldReturnValid</b><br>Test class: pl.testng.ch4.PasswordUtilTest<br>Parameters: 5, 2, _23__2____To#</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.PasswordUtilTest@7c242f04</td></tr>
+<tr>
+<td title='pl.testng.ch4.RegexUtilTest.shouldReturnValue()'><b>shouldReturnValue</b><br>Test class: pl.testng.ch4.RegexUtilTest<br>Parameters: abc12, null</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.RegexUtilTest@68a48d59</td></tr>
+<tr>
+<td title='pl.testng.ch4.RegexUtilTest.shouldReturnValue()'><b>shouldReturnValue</b><br>Test class: pl.testng.ch4.RegexUtilTest<br>Parameters: cdefg 345 12bb23, [Ljava.lang.String;@22ae2593</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.RegexUtilTest@68a48d59</td></tr>
+<tr>
+<td title='pl.testng.ch4.RegexUtilTest.shouldReturnValue()'><b>shouldReturnValue</b><br>Test class: pl.testng.ch4.RegexUtilTest<br>Parameters: cdefg 345 12bbb23 678tt, [Ljava.lang.String;@5724e7ae</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.RegexUtilTest@68a48d59</td></tr>
+<tr>
+<td title='pl.testng.ch4.RegexUtilTest.shouldReturnValue()'><b>shouldReturnValue</b><br>Test class: pl.testng.ch4.RegexUtilTest<br>Parameters: 345412, [Ljava.lang.String;@37e67d34</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.RegexUtilTest@68a48d59</td></tr>
+<tr>
+<td title='pl.testng.ch4.RegexUtilTest.shouldReturnValue()'><b>shouldReturnValue</b><br>Test class: pl.testng.ch4.RegexUtilTest<br>Parameters: 3452111, [Ljava.lang.String;@7d25fd97</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.RegexUtilTest@68a48d59</td></tr>
+<tr>
+<td title='pl.testng.ch6.UserListTest.shouldReturnZeroUsers()'><b>shouldReturnZeroUsers</b><br>Test class: pl.testng.ch6.UserListTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch6.UserListTest@2b8aef48</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString2()'><b>shouldReverseString2</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: abba, abba</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString2()'><b>shouldReverseString2</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: 12345, 54321</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString2()'><b>shouldReverseString2</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: , </td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString2()'><b>shouldReverseString2</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: @#$%, %$#@</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString2()'><b>shouldReverseString2</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: null, null</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString3()'><b>shouldReverseString3</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: abba, abba</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString3()'><b>shouldReverseString3</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: 12345, 54321</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString3()'><b>shouldReverseString3</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: , </td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString3()'><b>shouldReverseString3</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: @#$%, %$#@</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch3.StringUtilTest.shouldReverseString3()'><b>shouldReverseString3</b><br>Test class: pl.testng.ch3.StringUtilTest<br>Parameters: null, null</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch3.StringUtilTest@1118efc0</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.shouldSendOnlyOneMessageToMultiSubscriber()'><b>shouldSendOnlyOneMessageToMultiSubscriber</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch5.BookingSystem2Test.shouldThrowExceptionCasueMissingClassRooms()'><b>shouldThrowExceptionCasueMissingClassRooms</b><br>Test class: pl.testng.ch5.BookingSystem2Test</td>
+<td><div><pre>pl.testng.ch5.MissingClassRoomException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:31)
+	at pl.testng.ch5.BookingSystem2Test.shouldThrowExceptionCasueMissingClassRooms(BookingSystem2Test.java:78)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2083613511", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2083613511'><pre>pl.testng.ch5.MissingClassRoomException
+	at pl.testng.ch5.BookingSystem2.book(BookingSystem2.java:31)
+	at pl.testng.ch5.BookingSystem2Test.shouldThrowExceptionCasueMissingClassRooms(BookingSystem2Test.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch5.BookingSystem2Test@39e32cd6</td></tr>
+<tr>
+<td title='pl.testng.ch5.UserServiceTest.shouldUpdatePassword()'><b>shouldUpdatePassword</b><br>Test class: pl.testng.ch5.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.UserServiceTest@b3c03bb</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.subscribedClientShouldReveiveMessage()'><b>subscribedClientShouldReveiveMessage</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.jodatime.TimeTest.testDateTime()'><b>testDateTime</b><br>Test class: pl.testng.jodatime.TimeTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.jodatime.TimeTest@5986f987</td></tr>
+<tr>
+<td title='pl.testng.jodatime.TimeTest.testHoliday()'><b>testHoliday</b><br>Test class: pl.testng.jodatime.TimeTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.jodatime.TimeTest@5986f987</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.testInitializationReservation()'><b>testInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.jodatime.TimeTest.testPeriodTime()'><b>testPeriodTime</b><br>Test class: pl.testng.jodatime.TimeTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.jodatime.TimeTest@5986f987</td></tr>
+<tr>
+<td title='pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest.unsubsribedClientShouldNotReceiveMessages()'><b>unsubsribedClientShouldNotReceiveMessages</b><br>Test class: pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest</td>
+<td></td>
+<td>0</td>
+<td>pl.testng.ch5.RaceResultsServiceFirstAndSecondRefactoredTest@3ebd106</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongDatePattern()'><b>wrongDatePattern</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:12)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongDatePattern(ClassBookingSystemTest.java:61)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace672715523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace672715523'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystem.addReservation(ClassBookingSystem.java:12)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongDatePattern(ClassBookingSystemTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:30, 12:00</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2029357610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2029357610'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:00, 12:30</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace796506373", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace796506373'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:00, 12:05</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173290035", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173290035'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:05, 12:00</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116647243", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace116647243'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 11:00, aaaa</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:28)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace724171067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace724171067'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:28)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: vvvvv, aaaa</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:28)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace890550801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace890550801'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:28)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: vvvvv, 10:00</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:28)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1272738395", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1272738395'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:28)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: null, null</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:20)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace779930484", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace779930484'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:20)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+<tr>
+<td title='pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation()'><b>wrongInitializationReservation</b><br>Test class: pl.testng.ch4.ClassBookingSystemTest<br>Parameters: 13:00, 11:00</td>
+<td><div><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1655257006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1655257006'><pre>pl.testng.ch4.IllegalReservation
+	at pl.testng.ch4.Reservation.&lt;init&gt;(Reservation.java:31)
+	at pl.testng.ch4.ClassBookingSystemTest.wrongInitializationReservation(ClassBookingSystemTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>pl.testng.ch4.ClassBookingSystemTest@6ee7e2ec</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="343" started-at="2012-08-02T21:15:46Z" finished-at="2012-08-02T21:15:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="343" started-at="2012-08-02T21:15:46Z" finished-at="2012-08-02T21:15:46Z">
+      <class name="pl.testng.jodatime.TimeTest">
+        <test-method status="PASS" signature="testDateTime()[pri:0, instance:pl.testng.jodatime.TimeTest@58ee2549]" name="testDateTime" duration-ms="191" started-at="2012-08-02T23:15:46Z" finished-at="2012-08-02T23:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateTime -->
+        <test-method status="PASS" signature="testHoliday()[pri:0, instance:pl.testng.jodatime.TimeTest@58ee2549]" name="testHoliday" duration-ms="71" started-at="2012-08-02T23:15:46Z" finished-at="2012-08-02T23:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHoliday -->
+        <test-method status="PASS" signature="testHolidayWithBD()[pri:0, instance:pl.testng.jodatime.TimeTest@58ee2549]" name="testHolidayWithBD" duration-ms="2" started-at="2012-08-02T23:15:46Z" finished-at="2012-08-02T23:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHolidayWithBD -->
+        <test-method status="PASS" signature="testIMM()[pri:0, instance:pl.testng.jodatime.TimeTest@58ee2549]" name="testIMM" duration-ms="3" started-at="2012-08-02T23:15:46Z" finished-at="2012-08-02T23:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIMM -->
+        <test-method status="PASS" signature="testPeriodTime()[pri:0, instance:pl.testng.jodatime.TimeTest@58ee2549]" name="testPeriodTime" duration-ms="30" started-at="2012-08-02T23:15:46Z" finished-at="2012-08-02T23:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPeriodTime -->
+      </class> <!-- pl.testng.jodatime.TimeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
