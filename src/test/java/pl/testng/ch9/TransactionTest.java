@@ -1,11 +1,23 @@
 package pl.testng.ch9;
 
+import org.testng.annotations.Test;
+import org.testng.Assert;
+
 /**
- * Created with IntelliJ IDEA.
- * User: przemcio
- * Date: 13.09.12
- * Time: 21:41
- * To change this template use File | Settings | File Templates.
+ * Transaction test
  */
+
 public class TransactionTest {
+
+
+    public void shouldCreateANewObject() {
+
+        Transaction transaction = new TransactionTestDataBuilder().seMessage("message").setId(1).setRellyAllowed(true).setState("state").build();
+
+
+        Assert.assertNotNull(transaction);
+
+    }
+
+
 }

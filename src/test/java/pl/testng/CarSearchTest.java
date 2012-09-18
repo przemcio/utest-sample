@@ -1,11 +1,25 @@
 package pl.testng;
 
-/**
- * Created with IntelliJ IDEA.
- * User: przemcio
- * Date: 18.09.12
- * Time: 23:07
- * To change this template use File | Settings | File Templates.
- */
+
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import pl.testng.ch101.CarSearch;
+
 public class CarSearchTest {
+
+    private CarSearch carSearch;
+
+    @BeforeTest
+    public void setUp() {
+        carSearch = new CarSearch();
+    }
+
+    @Test
+    public void shouldReturnSportCars() {
+
+        carSearch.findSportCar();
+
+    }
+
 }

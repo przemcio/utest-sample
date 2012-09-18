@@ -1,11 +1,40 @@
 package pl.testng.ch9;
 
 /**
- * Created with IntelliJ IDEA.
- * User: przemcio
- * Date: 13.09.12
- * Time: 21:36
- * To change this template use File | Settings | File Templates.
+ * Test data builder
  */
 public class TransactionTestDataBuilder {
+
+    private long id;
+    private String state;
+    private boolean retryAllowed;
+    private String message;
+
+    TransactionTestDataBuilder setId(long id) {
+        this.id = id;
+        return  this;
+    }
+    TransactionTestDataBuilder setState(String state) {
+        this.state = state;
+        return this;
+    }
+    TransactionTestDataBuilder setRellyAllowed(boolean allowed) {
+        this.retryAllowed = allowed;
+        return this;
+    }
+    TransactionTestDataBuilder seMessage(String message) {
+        this.message = message;
+        return this;
+    }
+
+    public Transaction build() {
+        Transaction transaction = new Transaction();
+
+        transaction.setId(id);
+        transaction.setState(state);
+        transaction.setRetryAllowed(retryAllowed);
+        transaction.setMessage(message);
+
+        return transaction;
+    }
 }

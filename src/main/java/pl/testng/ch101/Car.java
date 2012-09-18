@@ -4,9 +4,9 @@ package pl.testng.ch101;
 import java.awt.*;
 
 public interface Car {
-    void getEngine();
+    Engine getEngine();
 
     public Color getColor();
 
-    public String getManufacture();
+    public Manufacturer getManufacture();
 }
