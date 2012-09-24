@@ -29,7 +29,7 @@ public class TimeTest {
 		DateTime dt = new DateTime();
 
 		
-		System.out.println("Current yoda time yyyyMMdd is "+ dtf.print(dt));
+		//System.out.println("Current yoda time yyyyMMdd is "+ dtf.print(dt));
 		
 		//DateTime dt2 = new DateTime(2012, 1, 31, 11, 00);
 		
@@ -40,11 +40,11 @@ public class TimeTest {
 		
 		DateTime dt = new DateTime(2012, 1, 31, 11, 00);
 
-		System.out.println("Set  yoda time yyyyMMdd is "+ dtf.print(dt));
+		//System.out.println("Set  yoda time yyyyMMdd is "+ dtf.print(dt));
 
 		DateTime dt2 = dt.plus(Months.ONE);
 		
-		System.out.println("Set  yoda time + period yyyyMMdd is "+ dtf.print(dt2));
+		//System.out.println("Set  yoda time + period yyyyMMdd is "+ dtf.print(dt2));
 	}
 	@Test
 	public void testHolidayWithBD() {
@@ -63,7 +63,7 @@ public class TimeTest {
 		
 		LocalDate endDate =  dateCalculator.moveByBusinessDays(3).getCurrentBusinessDate();
 		
-		System.out.println("End Date "+ endDate.toString());
+		//System.out.println("End Date "+ endDate.toString());
 	}
 	@Test
 	public void testHoliday() {
@@ -82,7 +82,7 @@ public class TimeTest {
 		
 		DateCalculator<LocalDate> tenorDateCalculator =  dateCalculator.moveByTenor(new Tenor(1, TenorCode.DAY));
 		
-		System.out.println("End Date TenorDate "+ tenorDateCalculator.getCurrentBusinessDate().toString());
+		//System.out.println("End Date TenorDate "+ tenorDateCalculator.getCurrentBusinessDate().toString());
 	}
 	@Test
 	public void testIMM() {
@@ -91,7 +91,7 @@ public class TimeTest {
 		
 		
 		LocalDate localDate = immCalculator.getNextIMMDate(new LocalDate());
-		System.out.println("Imm test: "+ localDate.toString());
+		//System.out.println("Imm test: "+ localDate.toString());
 		
 		
 	}
