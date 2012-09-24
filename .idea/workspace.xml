@@ -5,34 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eea2b8e-0cc0-4459-a5d9-6454ac47ae96" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/Fridge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/Car2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/CarBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/CarSearch2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/MyCar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/Stack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/testng/CsvReadTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/testng/ch10/CarSeach2Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/testng/ch10/CarSearchTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/testng/ch10/StackTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/testng/ch8/DotTestListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/data.csv" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/pl/testng/CarSearchTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/testng/ch101/Car.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/testng/ch101/CarSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/testng/ch101/Engine.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pl/testng/ch101/Manufacturer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/pl/testng/CarSearchTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pl/testng/ch101/Car.java" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/Car.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pl/testng/ch101/CarSearch.java" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/CarSearch.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pl/testng/ch101/Engine.java" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/Engine.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pl/testng/ch101/Manufacturer.java" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch10/Manufacturer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-book-sample-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/test-book-sample-1.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch11/Fridge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/pl/testng/ch11/FridgeTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pl/testng/Fridge.java" afterPath="$PROJECT_DIR$/src/main/java/pl/testng/ch11/NoSuchItemException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pl/testng/jodatime/TimeTest.java" afterPath="$PROJECT_DIR$/src/test/java/pl/testng/jodatime/TimeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-book-sample.iml" afterPath="$PROJECT_DIR$/test-book-sample.iml" />
     </list>
     <ignored path="test-book-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,15 +87,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StackTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/testng/ch10/StackTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="757" selection-end="757" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="data.csv" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/data.csv">
           <provider selected="true" editor-type-id="text-editor">
@@ -149,10 +117,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fridge.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/Fridge.java">
+      <file leaf-file-name="Fridge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/ch11/Fridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="19" selection-start="194" selection-end="194" vertical-scroll-proportion="0.36193028">
+            <state line="13" column="61" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FridgeTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/testng/ch11/FridgeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="0" selection-start="1191" selection-end="1191" vertical-scroll-proportion="1.5852273">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoSuchItemException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/ch11/NoSuchItemException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="16" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,10 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/pl/testng/ch101/CarSearchTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/testng/ch101/Car2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/testng/ch10/CarSeach2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/testng/ch101/CarSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/testng/ch101/CarSeach2.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/testng/ch101/CarSearch2.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/testng/ch10/CarSearchTest.java" />
@@ -230,6 +216,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/pl/testng/CsvReadTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/data.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/testng/Fridge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/testng/ch11/NoSuchItemException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/testng/ch10/FridgeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/testng/ch11/FridgeTest.java" />
       </list>
     </option>
   </component>
@@ -499,6 +489,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ch11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-book-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-book-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ch10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -618,6 +638,10 @@
               <option name="myItemId" value="testng" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -646,6 +670,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ch10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-book-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-book-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testng" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -714,46 +764,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.testng.ch11" />
       <recent name="pl.testng.ch10" />
       <recent name="pl.testng.ch101" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.testng.ch11" />
       <recent name="pl.testng.ch8" />
       <recent name="pl.testng.ch10" />
       <recent name="pl.testng.ch101" />
       <recent name="pl.testng.ch9" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CsvReadTest.test">
-    <configuration default="false" name="StackTest.shouldReturnLastAddedElement" type="TestNG" factoryName="TestNG" temporary="true">
-      <module name="test-book-sample" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="pl.testng.ch10" />
-      <option name="MAIN_CLASS_NAME" value="pl.testng.ch10.StackTest" />
-      <option name="METHOD_NAME" value="shouldReturnLastAddedElement" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.FridgeTest.testPutTake">
     <configuration default="false" name="StackTest.shouldReturnEmpty" type="TestNG" factoryName="TestNG" temporary="true">
       <module name="test-book-sample" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -876,6 +899,35 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="FridgeTest.testPutTake" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="test-book-sample" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="pl.testng.ch11" />
+      <option name="MAIN_CLASS_NAME" value="pl.testng.ch11.FridgeTest" />
+      <option name="METHOD_NAME" value="testPutTake" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -994,11 +1046,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.StackTest.shouldReturnLastAddedElement" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.StackTest.shouldReturnEmpty" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.StackTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.CsvReadTest.test" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.CsvReadTest" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.StackTest.shouldReturnEmpty" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.StackTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.CsvReadTest.test" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.CsvReadTest" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.FridgeTest.testPutTake" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1054,7 +1106,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1069,7 +1121,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2490024" sideWeight="0.3253205" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20909816" sideWeight="0.6730769" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39984038" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980047" sideWeight="0.6730769" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980047" sideWeight="0.6730769" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1137,16 +1189,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/ch10/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/ch10/Car2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/ch6/Issue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="59" selection-start="48" selection-end="48" vertical-scroll-proportion="0.12541807" />
@@ -1221,10 +1263,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/Fridge.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/ch11/NoSuchItemException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="194" selection-end="194" vertical-scroll-proportion="0.36193028">
+        <state line="4" column="16" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/testng/ch11/Fridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="61" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/testng/ch11/FridgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1191" selection-end="1191" vertical-scroll-proportion="1.5852273">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
