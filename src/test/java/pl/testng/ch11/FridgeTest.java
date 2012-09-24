@@ -42,13 +42,7 @@ public class FridgeTest {
         for(String item:food) {
             fridge.put(item);
             assertEquals(fridge.contains(item),true);
-            try {
-                fridge.take(item);
-                fail("there was no "+item+" in the fridge");
-            } catch (NoSuchItemException e) {
-                //wrong
-            }
-            assertEquals(fridge.contains(item),false);
+
         }
         for (String item: food) {
             try{
